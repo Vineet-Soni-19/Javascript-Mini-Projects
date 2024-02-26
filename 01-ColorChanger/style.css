@@ -15,6 +15,10 @@
     margin: 3px;
     display: inline-block;
 }
+.button:hover{
+    scale: 105%;
+    cursor: pointer;
+}
 span{
     display: block;
 }
