@@ -4,42 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .card{
-            height: 50px;
+        .projects {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
             width: 500px;
-            border: 2px solid black;
-            border-radius: 15px;
-            text-align: center;
-            font-size: x-large;
-            margin: 5px;
-            background-color: bisque;
-        }
-        .card:active{
-            scale: 101%;
-        }
-        .card:hover{
-            cursor: pointer;
-        }
-        p{
-            margin-top: 10px;
-        }
-        a{
+            background-color: #fff;
+            padding: 10px 30px;
+            border-radius: 8px;
+            color: #212121;
             text-decoration: none;
-            transition: color 0.3s ease;
-            color: black;
+            border: 2px solid #212121;
+            margin-top: 5px;
+            font-size: large;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        a:active{
+            transform: scale(1.01);
         }
     </style>
     <title>Javascript Mini Projects</title>
 </head>
+
 <body>
-    <div class="allProjects">
-        <a href="./01-ColorChanger/index.html" target="_blank"><div class="card"><p>Back Ground Color Changer</p></div></a>
-        <a href="./02-BMICalculator/index.html" target="_blank"><div class="card"><p>BMI Calculator</p></div></a>
-        <a href="./unlimitedColors/index.html" target="_blank"><div class="card"><p>Unlimited Colors</p></div></a>
+    <div class="parent">
+        <div class="projects">
+            <h1>Javascript Mini Projects</h1>
+            <a href="./01-ColorChanger/index.html" target="_blank">Back Ground Color Changer</a>
+            <a href="./02-BMICalculator/index.html" target="_blank">BMI Calculator</a>
+            <a href="./unlimitedColors/index.html" target="_blank">Unlimited Colors</a>
+        </div>
     </div>
 </body>
+
 </html>
