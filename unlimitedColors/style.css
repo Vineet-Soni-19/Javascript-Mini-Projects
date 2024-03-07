@@ -1,0 +1,28 @@
+*{
+    overflow: hidden;
+}
+.parentContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: large;
+    background-color: aliceblue;
+}
+
+button:hover{
+    cursor: pointer;
+}
